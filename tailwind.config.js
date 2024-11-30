@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        jetbrains: ['"JetBrains Mono"', 'monospace'],
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin')
