@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'portfolio-contact-button',
   imports: [],
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './contact-button.component.css'
 })
 export class ContactButtonComponent {
-
+  constructor(private router: Router) { }
+  goToForm()
+  {
+    this.router.navigate(['/portfolio/contact']);
+  }
 }
